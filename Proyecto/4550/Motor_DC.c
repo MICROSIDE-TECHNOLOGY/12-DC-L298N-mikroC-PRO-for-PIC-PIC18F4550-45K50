@@ -42,7 +42,7 @@ void main() org 0x2000
            IN_2 = 0 ;
            SUBE = 1;
 
-           while (VELOCIDAD < 1020&&SUBE)
+           while (VELOCIDAD < 250&&SUBE)
            {
                  VELOCIDAD += 5;                //Se va incrementando del valor en el PWM hasta el máximo
                  PWM1_Set_Duty  (VELOCIDAD);    //Se incrementa en pasos de 15 el ciclo de trabajo
@@ -67,7 +67,7 @@ void main() org 0x2000
            IN_2 = 1 ;
            SUBE = 1;
 
-           while (VELOCIDAD < 1020&&SUBE)
+           while (VELOCIDAD < 250&&SUBE)
            {
                  VELOCIDAD += 5;                //Se va incrementando del valor en el PWM hasta el máximo
                  PWM1_Set_Duty  (VELOCIDAD);    //Se incrementa en pasos de 15 el ciclo de trabajo
