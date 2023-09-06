@@ -46,7 +46,7 @@ void main() org 0x2000
            {
                  VELOCIDAD += 5;                //Se va incrementando del valor en el PWM hasta el máximo
                  PWM1_Set_Duty  (VELOCIDAD);    //Se incrementa en pasos de 15 el ciclo de trabajo
-                 delay_ms (40);
+                 Delay_ms (40);
            }
 
            SUBE = 0;
@@ -55,13 +55,13 @@ void main() org 0x2000
            {
                  VELOCIDAD -= 5;                //Se va reduciendo el valor en el PWM hasta el mí­nimo
                  PWM1_Set_Duty  (VELOCIDAD);    //Se reduce en pasos de 15 el ciclo de trabajo
-                 delay_ms (40) ;
+                 Delay_ms (40) ;
            }
 
            SUBE = 1;
            IN_1 = 0;                            //Alto del motor
            IN_2 = 0;
-           delay_ms (1000) ;
+           Delay_ms (1000) ;
 
            IN_1 = 0;                            //Dirección del motor
            IN_2 = 1 ;
@@ -71,7 +71,7 @@ void main() org 0x2000
            {
                  VELOCIDAD += 5;                //Se va incrementando del valor en el PWM hasta el máximo
                  PWM1_Set_Duty  (VELOCIDAD);    //Se incrementa en pasos de 15 el ciclo de trabajo
-                 delay_ms (40);
+                 Delay_ms (40);
            }
 
            SUBE = 0;
@@ -80,12 +80,12 @@ void main() org 0x2000
            {
                  VELOCIDAD -= 5;                //Se va reduciendo el valor en el PWM hasta el mí­nimo
                  PWM1_Set_Duty  (VELOCIDAD);    //Se reduce en pasos de 15 el ciclo de trabajo
-                 delay_ms (40) ;
+                 Delay_ms (40) ;
            }
 
            SUBE = 1;
            IN_1 = 0;                            //Alto del motor
            IN_2 = 0;
-           delay_ms (500) ;
+           Delay_ms (500) ;
       }
 }
